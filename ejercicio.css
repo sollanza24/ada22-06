@@ -1,0 +1,54 @@
+.flex-container{
+    display: flex;
+}
+
+.flex-container div{
+    margin-right: 50px;
+}
+
+.información{
+    display: flex;
+}
+
+.información2 li{
+    color: blue;
+}
+
+.información2 span{
+    color: black;
+    font-weight: bold;
+}
+
+@media (max-width:600px){
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .flex-container div{
+        margin-right: 0px;
+    }
+
+    .información{
+        flex-direction: column;
+    }
+
+    ul{
+        padding: 0;
+    }
+
+    li{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2{
+        border-bottom: 1px gray solid;
+    }
+}
+
+@media (min-width:600px) and (max-width:1200px){
+    .información{
+        flex-direction: column;
+    }
+}
